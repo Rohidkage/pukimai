@@ -46,10 +46,10 @@ async def bug(_, msg: Message):
     datetimes_fmt = "%d-%m-%Y"
     datetimes = datetime.utcnow().strftime(datetimes_fmt)
 
-    thumb = "https://telegra.ph/file/fcdc792f018f3cf899cf2.jpg"
+    thumb = "https://telegra.ph/file/d5ec232215c11aa3e5013.jpg"
     
     bug_report = f"""
-**#BUG : ** **[Master](https://t.me/ybgskr_ex)**
+**#BUG : ** **[Master](https://t.me/hllofubtch)**
 **From User : ** **{mention}**
 **User ID : ** **{user_id}**
 **Group : ** **{chat_username}**
