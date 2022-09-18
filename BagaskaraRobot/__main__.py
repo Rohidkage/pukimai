@@ -83,8 +83,8 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *Hello {} !*
 ────────────────────────
-🔥 I'm an wibu theme bot designed to help manage and playing music your telegram group with a lot features.
-🔥 Maintained by [ʙᴧɢᴧsҡᴧʀᴧ](https://t.me/ybgskr_ex)
+I'm A Powerfull bot designed to help manage and playing music your telegram group with a lot features.
+Maintained by [ALTERBASE MUSIC](https://t.me/hllofubtch)
 ────────────────────────
 Hit the /help to see available command.
 """
@@ -101,16 +101,16 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="ᴅᴏɴᴀᴛɪᴏɴ ❤️", url="https://t.me/ybgskr"
+            text="ᴅᴏɴᴀᴛɪᴏɴ ", url="https://t.me/hllofubtch"
         ),
         InlineKeyboardButton(
-            text="sᴜᴘᴘᴏʀᴛ​ 🇮🇩", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
         InlineKeyboardButton(
             text="➗ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➗", 
-            url="t.me/oneupdirty_bot?startgroup=new"
+            url="t.me/alterbasemusic_bot?startgroup=new"
         ),
     ],
 ]
@@ -118,12 +118,12 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://telegra.ph/file/63267910585608a6302b0.jpg"
+EMI_IMG = "https://telegra.ph/file/d5ec232215c11aa3e5013.jpg"
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
- You can support the project by contacting @ybgskr_ex \
+ You can support the project by contacting @hllofubtch \
  Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us developer the Bagaskara Robot at ."""
+ Those who cannot provide monetary support are welcome to help us developer the Alter Base Music Robot at ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -242,7 +242,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>Hi I'm Bagaskara robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
+            f"<b>Hi I'm Alter Base robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML
        )
 
@@ -373,15 +373,15 @@ def Skyzu_about_callback(update, context):
     query = update.callback_query
     if query.data == "Skyzu_":
         query.message.edit_text(
-            text="๏ I'm *Bagaskara Robot*, a wibu group management robot and Music player built to help you manage and playing music in your group easily."
+            text="๏ I'm *Alter Base Robot*, a wibu group management robot and Music player built to help you manage and playing music in your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Bagaskara's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for BagaskaraRobot.",
+            "\n\Alter Base's licensed under the GNU General Public License v3.0_"
+            "\n\n Click on button bellow to get basic help for Alter Base Robot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -460,13 +460,13 @@ def Skyzu_about_callback(update, context):
         )
     elif query.data == "Skyzu_support":
         query.message.edit_text(
-            text="*๏ Bagaskara support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Bagaskara Robot.",
+            text="*๏ Alter Base support chats*"
+            "\nJoin My Support Group/Channel for see or report a problem on Alter Base Robot.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="t.me/allfucek"),
+                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="t.me/video_tante"),
                  ],
                  [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
@@ -479,14 +479,14 @@ def Skyzu_about_callback(update, context):
 
     elif query.data == "Skyzu_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credit for Bagaskara Robot</b>\n"
-            f"\nHere Developers Making The Bagaskara Robot",
+            text=f"<b>๏ Credit for Alter Base Robot</b>\n"
+            f"\nHere Developers Making The Alter Base Robot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ʙᴀɢᴀsᴋᴀʀᴀ", url="t.me/ybgskr_ex"),
-                    InlineKeyboardButton(text="ʏʙɢsᴋʀ", url="t.me/ybgskr12"),
+                    InlineKeyboardButton(text="OWNER BOT", url="t.me/hllofubtch"),
+                    InlineKeyboardButton(text="DEVELOPER", url="t.me/ybgskr"),
                  ],
                  [
                     InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
@@ -807,7 +807,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Bagaskara Robot Started!**
+                f"""**Alter Base Robot Actived!**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
